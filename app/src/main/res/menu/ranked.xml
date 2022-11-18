@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnuitShare"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_top_10"
+        app:showAsAction="always" />
+</menu>

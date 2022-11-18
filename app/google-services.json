@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "233592696743",
+    "firebase_url": "https://moviemania-3e4c6-default-rtdb.firebaseio.com",
+    "project_id": "moviemania-3e4c6",
+    "storage_bucket": "moviemania-3e4c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233592696743:android:80e38fe5de12b09ee6d082",
+        "android_client_info": {
+          "package_name": "edu.weber.w01344426.moviemania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233592696743-160i1f32b0ds798k82cc2d70vdjcadqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-c0AvggYmGBBO5Zq7YntCyn1J9GA09Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233592696743-160i1f32b0ds798k82cc2d70vdjcadqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

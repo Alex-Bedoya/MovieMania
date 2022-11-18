@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_master_list">
+
+    <fragment
+        android:id="@+id/nav_master_list"
+        android:name="edu.weber.w01344426.moviemania.ui.master.masterFragment"
+        android:label="Master List"
+        tools:layout="@layout/fragment_master" >
+        <action
+            android:id="@+id/action_nav_master_list_to_nav_wanttowatch_list"
+            app:destination="@id/nav_wanttowatch_list" />
+        <action
+            android:id="@+id/action_nav_master_list_to_nav_owned_list"
+            app:destination="@id/nav_owned_list" />
+        <action
+            android:id="@+id/action_nav_master_list_to_nav_ranked_list"
+            app:destination="@id/nav_ranked_list" />
+        <action
+            android:id="@+id/action_nav_master_list_to_nav_account_info"
+            app:destination="@id/nav_account_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_wanttowatch_list"
+        android:name="edu.weber.w01344426.moviemania.ui.WantWatch.WantWatchFragment"
+        android:label="Want to Watch List"
+        tools:layout="@layout/fragment_want_watch" >
+        <action
+            android:id="@+id/action_nav_wanttowatch_list_to_nav_master_list"
+            app:destination="@id/nav_master_list" />
+        <action
+            android:id="@+id/action_nav_wanttowatch_list_to_nav_owned_list"
+            app:destination="@id/nav_owned_list" />
+        <action
+            android:id="@+id/action_nav_wanttowatch_list_to_nav_ranked_list"
+            app:destination="@id/nav_ranked_list" />
+        <action
+            android:id="@+id/action_nav_wanttowatch_list_to_nav_account_info"
+            app:destination="@id/nav_account_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_owned_list"
+        android:name="edu.weber.w01344426.moviemania.ui.Owned.OwnedFragment"
+        android:label="Owned List"
+        tools:layout="@layout/fragment_owned" >
+        <action
+            android:id="@+id/action_nav_owned_list_to_nav_master_list"
+            app:destination="@id/nav_master_list" />
+        <action
+            android:id="@+id/action_nav_owned_list_to_nav_wanttowatch_list"
+            app:destination="@id/nav_wanttowatch_list" />
+        <action
+            android:id="@+id/action_nav_owned_list_to_nav_ranked_list"
+            app:destination="@id/nav_ranked_list" />
+        <action
+            android:id="@+id/action_nav_owned_list_to_nav_account_info"
+            app:destination="@id/nav_account_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ranked_list"
+        android:name="edu.weber.w01344426.moviemania.ui.Ranked.RankedFragment"
+        android:label="Ranked List"
+        tools:layout="@layout/fragment_ranked" >
+        <action
+            android:id="@+id/action_nav_ranked_list_to_nav_master_list"
+            app:destination="@id/nav_master_list" />
+        <action
+            android:id="@+id/action_nav_ranked_list_to_nav_wanttowatch_list"
+            app:destination="@id/nav_wanttowatch_list" />
+        <action
+            android:id="@+id/action_nav_ranked_list_to_nav_owned_list"
+            app:destination="@id/nav_owned_list" />
+        <action
+            android:id="@+id/action_nav_ranked_list_to_nav_account_info"
+            app:destination="@id/nav_account_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_account_info"
+        android:name="edu.weber.w01344426.moviemania.AccountInfoFragment"
+        android:label="@string/account_info"
+        tools:layout="@layout/fragment_account_info" >
+        <action
+            android:id="@+id/action_nav_account_info_to_nav_owned_list"
+            app:destination="@id/nav_owned_list" />
+        <action
+            android:id="@+id/action_nav_account_info_to_nav_wanttowatch_list"
+            app:destination="@id/nav_wanttowatch_list" />
+        <action
+            android:id="@+id/action_nav_account_info_to_nav_master_list"
+            app:destination="@id/nav_master_list" />
+        <action
+            android:id="@+id/action_nav_account_info_to_nav_ranked_list"
+            app:destination="@id/nav_ranked_list" />
+    </fragment>
+
+</navigation>

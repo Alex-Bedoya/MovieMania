@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_add.xml" value="0.22135416666666666" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_check.xml" value="0.22135416666666666" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_delete.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_film.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_menu_camera.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.31145833333333334" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_ordered.xml" value="0.22135416666666666" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_share.xml" value="0.22135416666666666" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_shuffle.xml" value="0.29739583333333336" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/ic_x.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/drawable/side_nav_bar.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/activity_main.xml" value="0.2953125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/actor_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/app_bar_main.xml" value="0.2953125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_account_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_add_movie.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_delete_movie_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_gallery.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_master.xml" value="0.3161231884057971" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_movie_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_owned.xml" value="0.2953125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_ranked.xml" value="0.2953125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_slideshow.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/fragment_want_watch.xml" value="0.2953125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/movie_view.xml" value="0.3333333333333333" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/nav_header_main.xml" value="0.29483695652173914" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/ranked_view.xml" value="0.3333333333333333" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/layout/search_movie_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/menu/activity_main_drawer.xml" value="0.4466666666666667" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/menu/details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/menu/ranked.xml" value="0.20520833333333333" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/menu/wantwatch.xml" value="0.28125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/mipmap-anydpi-v26/ic_MovieMania.xml" value="0.3828125" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.221875" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.221875" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/mipmap-anydpi-v26/ic_movie_mania_logo.xml" value="0.221875" />
+        <entry key="..\:/Weber/CS3270Android/AndroidProjects/MovieMania/app/src/main/res/mipmap-anydpi-v26/ic_movie_mania_logo_round.xml" value="0.221875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

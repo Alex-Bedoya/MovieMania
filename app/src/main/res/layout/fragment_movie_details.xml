@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailsFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbMovieDetails"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+
+        tools:context=".MovieDetailsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgDetPoster"
+                android:layout_width="175dp"
+                android:layout_height="258dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/black"
+                android:padding="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetTitle"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/lblDetTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Harry Potter and the Goblet Of Fire" />
+
+            <TextView
+                android:id="@+id/lblDetRuntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/lblDetRating"
+                app:layout_constraintTop_toTopOf="@+id/lblDetRating"
+                tools:text="208 mins" />
+
+            <TextView
+                android:id="@+id/lblDetRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/lblDetRuntime"
+                app:layout_constraintStart_toEndOf="@+id/imgDetPoster"
+                app:layout_constraintTop_toTopOf="@+id/imgDetPoster"
+                tools:text="PG" />
+
+            <TextView
+                android:id="@+id/lblDetVoteAvg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imgDetPoster"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetRuntime"
+                tools:text="Rating: 8.8/10" />
+
+            <CheckBox
+                android:id="@+id/chckbxHaveWatched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/want_to_watch"
+                android:textColor="@color/MainText"
+                app:layout_constraintBottom_toBottomOf="@+id/chckbxOwned"
+                app:layout_constraintEnd_toStartOf="@+id/chckbxOwned"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/chckbxOwned" />
+
+            <CheckBox
+                android:id="@+id/chckbxOwned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/owned"
+                android:textColor="@color/MainText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgDetPoster" />
+
+            <ImageButton
+                android:id="@+id/btnTrailer"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/red"
+                android:contentDescription="@string/trailer"
+                android:src="@drawable/ic_play"
+                app:layout_constraintStart_toEndOf="@+id/imgDetPoster"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetComposer"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/lblDetOverview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:text=""
+                android:justificationMode="inter_word"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/SecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                tools:text="This is a fake overview of what happens in the goblet of fire. Harry accidentlaly touches a cup that makes him able to fight dragons and he falls in love with somoene, and they go to a ball and a vampire dies at the end." />
+
+            <TextView
+                android:id="@+id/lblDetGenres"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/SecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                tools:text="| Mystery | Action | Horror |" />
+
+            <CheckBox
+                android:id="@+id/chckbxRankedList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ranked_list"
+                android:textColor="@color/MainText"
+                app:layout_constraintBottom_toBottomOf="@+id/chckbxOwned"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chckbxOwned"
+                app:layout_constraintTop_toTopOf="@+id/chckbxOwned" />
+
+            <TextView
+                android:id="@+id/lblDetDirector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgDetPoster"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetVoteAvg"
+                tools:text="Director \n Christopher Nolan" />
+
+            <TextView
+                android:id="@+id/lblDetComposer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgDetPoster"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetDirector"
+                tools:text="Composer \nMichael Giacchino"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/actors"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/MainText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetOverview" />
+
+            <TextView
+                android:id="@+id/lblDetActorList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/SecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:text="Matt Mconhay\nMargot Robbie\nChristopher Lloyde" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/overview_"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/MainText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chckbxOwned" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/genres_"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/MainText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetActorList" />
+
+            <EditText
+                android:id="@+id/txtDetUserComments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/MainText"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:padding="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3"
+                tools:text="this is sample text that I put in the user notes so that they have \n test a new line. We want to learn how this works with it and how it will show to others and things like that. I would put that I liked the cinemetography, but I didnt like the character" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/user_notes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/MainText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblDetGenres" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/user_rating"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/MainText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDetUserComments" />
+
+            <RatingBar
+                android:id="@+id/rbDetUserRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="32dp"
+                android:numStars="5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView6"
+                android:progressTint="@color/Gold"
+                android:progressBackgroundTint="@color/black"
+                android:secondaryProgressTint="@color/black"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_master_list"
+            android:icon="@drawable/ic_film"
+            android:title="@string/master_list" />
+        <item
+            android:id="@id/nav_wanttowatch_list"
+            android:icon="@drawable/ic_watch_later"
+            android:title="@string/want_to_watch" />
+        <item
+            android:id="@+id/nav_owned_list"
+            android:icon="@drawable/ic_check"
+            android:title="@string/owned" />
+        <item
+            android:id="@+id/nav_ranked_list"
+            android:icon="@drawable/ic_ordered"
+            android:title="@string/ranked" />
+        <item
+            android:id="@+id/nav_account_info"
+            android:icon="@drawable/ic_user"
+            android:title="@string/account_info" />
+    </group>
+</menu>
